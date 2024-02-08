@@ -1,5 +1,3 @@
-// File: src/TodoList.tsx
-
 import React, { useState } from 'react';
 
 interface Todo {
