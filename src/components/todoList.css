@@ -1,0 +1,26 @@
+.todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .todo-item span {
+    flex-grow: 1;
+    text-decoration: none;
+    margin-right: 30px;
+  }
+
+  .todo-item button {
+    margin-left: 10px;
+  }

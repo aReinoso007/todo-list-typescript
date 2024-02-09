@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-interface Todo {
+type Todo = {
   id: number;
   task: string;
   completed: boolean;
@@ -36,11 +36,11 @@ const TodoList: React.FC = () => {
   };
 
   return (
-    <div>
-      <h2>Your Todo List</h2>
+    <div className='todo-list'>
+      <h2 className='title'>Your Todo List</h2>
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id}>
+          <li key={todo.id} className='todo-item'>
             <input
               type="checkbox"
               checked={todo.completed}
@@ -53,7 +53,7 @@ const TodoList: React.FC = () => {
             >
               {todo.task}
             </span>
-            <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+            <button onClick={() => deleteTodo(todo.id)}>🗑️</button>
           </li>
         ))}
       </ul>
